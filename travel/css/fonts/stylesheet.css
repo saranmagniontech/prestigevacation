@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Buttercell Brush';
+    src: url('ButtercellBrush.eot');
+    src: local('Buttercell Brush'), local('ButtercellBrush'),
+        url('ButtercellBrush.eot?#iefix') format('embedded-opentype'),
+        url('ButtercellBrush.woff2') format('woff2'),
+        url('ButtercellBrush.woff') format('woff'),
+        url('ButtercellBrush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Buttercell Script';
+    src: url('ButtercellScript.eot');
+    src: local('Buttercell Script'), local('ButtercellScript'),
+        url('ButtercellScript.eot?#iefix') format('embedded-opentype'),
+        url('ButtercellScript.woff2') format('woff2'),
+        url('ButtercellScript.woff') format('woff'),
+        url('ButtercellScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
