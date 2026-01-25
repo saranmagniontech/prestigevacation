@@ -1,5 +1,0 @@
-Allow
-Crawl-delay: 
-Sitemap: https://prestigevacations.in/sitemap.xml
-User-agent: *
-Allow :/
