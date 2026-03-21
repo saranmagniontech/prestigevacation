@@ -7,9 +7,9 @@
     <!-- Title -->
     <title>Prestige Vacations | Gallery</title>
     <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Swiper CSS (v9) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS (v9) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- animate css -->
@@ -876,366 +876,476 @@
     </section> -->
 
 
-  <style>
-    :root {
-      --accent: #268EDD; /* updated color */
-      --bg: #222;
-      --text: #fff;
-    }
-
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); font-family: Nunito, sans-serif; color: var(--text); }
-
-    .gallery {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 24px 16px 48px;
-      overflow: hidden;
-    }
-
-    .title {
-      font-size: 36px;
-      line-height: 1.2;
-      font-weight: 800;
-      color: var(--accent);
-      margin: 8px 0 6px;
-      text-align: center;
-    }
-
-    .heading {
-      font-size: 18px;
-      line-height: 1.5;
-      opacity: 0.9;
-      margin: 0 0 18px;
-      text-align: center;
-    }
-
-    /* Swiper container */
-    .swiper {
-      width: 100%;
-      overflow: hidden;
-      padding-bottom: 48px;
-      position: relative;
-    }
-
-    .swiper-wrapper { align-items: stretch; }
-
-    .swiper-slide {
-      display: flex;
-      align-items: stretch;
-      justify-content: center;
-    }
-
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 12px;
-      display: block;
-    }
-
-    /* Pagination bullets */
-    .swiper-pagination-bullet {
-      width: 26px;
-      height: 4px;
-      border-radius: 0;
-      background: var(--accent);
-      opacity: 0.5;
-    }
-    .swiper-pagination-bullet-active {
-      opacity: 1;
-      background: var(--accent);
-    }
-
-    /* Navigation buttons */
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: var(--accent);
-      color: #fff;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-      transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.25s;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-    }
-
-    .swiper-button-prev { left: 8px; }
-    .swiper-button-next { right: 8px; }
-
-    .swiper-button-prev::after { 
-      content: "<"; 
-      font-size: 22px; 
-      font-weight: 900; 
-    }
-    .swiper-button-next::after { 
-      content: ">"; 
-      font-size: 22px; 
-      font-weight: 900; 
-    }
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-      background: #fff;
-      color: var(--accent);
-      border: 2px solid var(--accent);
-    }
-
-    @media (max-width: 768px) {
-      .title { font-size: 28px; }
-      .heading { font-size: 16px; }
-    }
-    @media (max-width: 480px) {
-      .title { font-size: 24px; }
-      .heading { font-size: 14px; }
-      .swiper-button-prev { left: 4px; }
-      .swiper-button-next { right: 4px; }
-    }
-  </style>
-
-
-  <div class="gallery" id="gallery-1">
-    <h2 class="title">GALLERY</h2>
-    <br>
-
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img1.jpg" alt="Gallery image 1" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img8.jpg" alt="Gallery image 2" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img12.jpg" alt="Gallery image 3" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img13.jpg" alt="Gallery image 4" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img14.jpg" alt="Gallery image 5" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img18.jpg" alt="Gallery image 6" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img7.jpg" alt="Gallery image 7" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img11.jpg" alt="Gallery image 8" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img23.jpg" alt="Gallery image 9" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img24.jpg" alt="Gallery image 10" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img25.jpg" alt="Gallery image 11" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img26.jpg" alt="Gallery image 12" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img27.jpg" alt="Gallery image 13" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/1.jpg" alt="Gallery image 14" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/2.jpg" alt="Gallery image 1" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/3.jpg" alt="Gallery image 2" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/4.jpg" alt="Gallery image 3" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/5.jpg" alt="Gallery image 4" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/6.jpg" alt="Gallery image 5" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/7.jpg" alt="Gallery image 6" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/8.jpg" alt="Gallery image 7" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/9.jpg" alt="Gallery image 8" onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/10.jpg" alt="Gallery image 9" onclick="openModal(this)">
-        </div>
-      </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-prev" aria-label="Previous slide"></div>
-      <div class="swiper-button-next" aria-label="Next slide"></div>
-    </div>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img46.jpg" alt="Gallery image 1"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img32.jpg" alt="Gallery image 2"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img33.jpg" alt="Gallery image 3"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img34.jpg" alt="Gallery image 4"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img35.jpg" alt="Gallery image 5"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img36.jpg" alt="Gallery image 6"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img37.jpg" alt="Gallery image 7"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img38.jpg" alt="Gallery image 8"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img40.jpg" alt="Gallery image 9"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img41.jpg" alt="Gallery image 10"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img42.jpg" alt="Gallery image 11"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img47.jpg" alt="Gallery image 12"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img44.jpg" alt="Gallery image 13"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/img45.jpg" alt="Gallery image 14"  onclick="openModal(this)">
-        </div>
-         <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/11.jpg" alt="Gallery image 1"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/12.jpg" alt="Gallery image 2"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/13.jpg" alt="Gallery image 3"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/14.jpg" alt="Gallery image 4"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/15.jpg" alt="Gallery image 5"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/16.jpg" alt="Gallery image 6"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/17.jpg" alt="Gallery image 7"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/18.jpg" alt="Gallery image 8"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/19.jpg" alt="Gallery image 9"  onclick="openModal(this)">
-        </div>
-        <div class="swiper-slide">
-          <img src="../assets/img/Travel/new_image/20.jpg" alt="Gallery image 10"  onclick="openModal(this)">
-        </div>
-      </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-prev" aria-label="Previous slide"></div>
-      <div class="swiper-button-next" aria-label="Next slide"></div>
-    </div>
-  </div>
-
-  <div id="imgModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img id="modalImg" />
-  </div>
     <style>
-    /* Modal styles */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0,0,0,0.9);
-        justify-content: center;
-        align-items: center;
-    }
-    .modal img {
-        max-width: 90%;
-        max-height: 90%;
-        border-radius: 8px;
-    }
-    .modal .close {
-        position: absolute;
-        top: 20px; right: 30px;
-        font-size: 35px;
-        color: #fff;
-        cursor: pointer;
-    }
+        :root {
+            --accent: #268EDD;
+            /* updated color */
+            --bg: #222;
+            --text: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            font-family: Nunito, sans-serif;
+            color: var(--text);
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: var(--accent);
+            margin: 8px 0 6px;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 18px;
+            line-height: 1.5;
+            opacity: 0.9;
+            margin: 0 0 18px;
+            text-align: center;
+        }
+
+        /* Swiper container */
+        .swiper {
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 48px;
+            position: relative;
+        }
+
+        .swiper-wrapper {
+            align-items: stretch;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* Pagination bullets as segments - Full Width */
+        .swiper-pagination {
+            display: flex !important;
+            justify-content: center;
+            width: 100% !important;
+            bottom: 24px !important;
+            padding: 0 16px;
+        }
+
+        .swiper-pagination-bullet {
+            flex: 1;
+            height: 2px;
+            border-radius: 0;
+            background: var(--accent);
+            opacity: 0.3;
+            margin: 0 2px !important;
+            transition: opacity 0.3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: var(--accent);
+        }
+
+        /* Navigation buttons */
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.25s;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .swiper-button-prev {
+            left: 8px;
+        }
+
+        .swiper-button-next {
+            right: 8px;
+        }
+
+        .swiper-button-prev::after {
+            content: "<";
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .swiper-button-next::after {
+            content: ">";
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: #fff;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 28px;
+            }
+
+            .heading {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .heading {
+                font-size: 14px;
+            }
+
+            .swiper-button-prev {
+                left: 4px;
+            }
+
+            .swiper-button-next {
+                right: 4px;
+            }
+        }
     </style>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop:true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      centeredSlides: false,
-      centeredSlidesBounds: true,
-      watchOverflow: true,
-      resizeObserver: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0:    { slidesPerView: 1,   spaceBetween: 12 },
-        480:  { slidesPerView: 1.25,spaceBetween: 14 },
-        640:  { slidesPerView: 1.75,spaceBetween: 16 },
-        900:  { slidesPerView: 2.5, spaceBetween: 18 },
-        1200: { slidesPerView: 3,   spaceBetween: 20 },
-      },
-    });
-    function openModal(img) {
-        document.getElementById("imgModal").style.display = "flex";
-        document.getElementById("modalImg").src = img.src;
-    }
-    function closeModal() {
-        document.getElementById("imgModal").style.display = "none";
-    }
-  </script>
+
+
+    <div class="gallery" id="gallery-1">
+        <h2 class="title">GALLERY</h2>
+        <br>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/21.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/22.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/24.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/25.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/26.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/27.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/28.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/31.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/32.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/33.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img1.jpg" alt="Gallery image 1" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img8.jpg" alt="Gallery image 2" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img12.jpg" alt="Gallery image 3" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img13.jpg" alt="Gallery image 4" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img14.jpg" alt="Gallery image 5" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img18.jpg" alt="Gallery image 6" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img7.jpg" alt="Gallery image 7" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img11.jpg" alt="Gallery image 8" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img23.jpg" alt="Gallery image 9" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img24.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img25.jpg" alt="Gallery image 11" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img26.jpg" alt="Gallery image 12" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img27.jpg" alt="Gallery image 13" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/1.jpg" alt="Gallery image 14" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/2.jpg" alt="Gallery image 1" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/3.jpg" alt="Gallery image 2" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/4.jpg" alt="Gallery image 3" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/5.jpg" alt="Gallery image 4" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/6.jpg" alt="Gallery image 5" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/7.jpg" alt="Gallery image 6" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/8.jpg" alt="Gallery image 7" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/9.jpg" alt="Gallery image 8" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/10.jpg" alt="Gallery image 9" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev" aria-label="Previous slide"></div>
+            <div class="swiper-button-next" aria-label="Next slide"></div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/35.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/36.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/37.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/40.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/42.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/43.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/45.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/46.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/47.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/48.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img46.jpg" alt="Gallery image 1" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img32.jpg" alt="Gallery image 2" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img33.jpg" alt="Gallery image 3" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img34.jpg" alt="Gallery image 4" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img35.jpg" alt="Gallery image 5" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img36.jpg" alt="Gallery image 6" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img37.jpg" alt="Gallery image 7" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img38.jpg" alt="Gallery image 8" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img40.jpg" alt="Gallery image 9" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img41.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img42.jpg" alt="Gallery image 11" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img47.jpg" alt="Gallery image 12" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img44.jpg" alt="Gallery image 13" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/img45.jpg" alt="Gallery image 14" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/11.jpg" alt="Gallery image 1" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/12.jpg" alt="Gallery image 2" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/13.jpg" alt="Gallery image 3" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/14.jpg" alt="Gallery image 4" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/15.jpg" alt="Gallery image 5" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/16.jpg" alt="Gallery image 6" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/17.jpg" alt="Gallery image 7" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/18.jpg" alt="Gallery image 8" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/19.jpg" alt="Gallery image 9" onclick="openModal(this)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/Travel/new_image/20.jpg" alt="Gallery image 10" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev" aria-label="Previous slide"></div>
+            <div class="swiper-button-next" aria-label="Next slide"></div>
+        </div>
+    </div>
+
+    <div id="imgModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImg" />
+    </div>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 35px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            centeredSlides: false,
+            centeredSlidesBounds: true,
+            watchOverflow: true,
+            resizeObserver: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 12 },
+                480: { slidesPerView: 1.25, spaceBetween: 14 },
+                640: { slidesPerView: 1.75, spaceBetween: 16 },
+                900: { slidesPerView: 2.5, spaceBetween: 18 },
+                1200: { slidesPerView: 3, spaceBetween: 20 },
+            },
+        });
+        function openModal(img) {
+            document.getElementById("imgModal").style.display = "flex";
+            document.getElementById("modalImg").src = img.src;
+        }
+        function closeModal() {
+            document.getElementById("imgModal").style.display = "none";
+        }
+    </script>
 
 
 
